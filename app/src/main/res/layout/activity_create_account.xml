@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/tool_bar_auth" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="49dp"
+        android:fontFamily="@font/inter_medium_500"
+        android:text="@string/create_account"
+        android:textColor="#1D2C3C"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="11dp"
+        android:fontFamily="@font/inter_regular_400"
+        android:text="@string/register_email_mobile"
+        android:textColor="#5E6872"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginTop="37dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/emailBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/sep"
+            android:backgroundTint="@color/selectedColor"
+            android:elevation="0dp"
+            android:focusedByDefault="true"
+            android:fontFamily="@font/inter_medium_500"
+            android:text="@string/email"
+            android:textAllCaps="false"
+            android:textColor="#475766"
+            android:textSize="14sp"
+            app:cornerRadius="7dp"
+            app:elevation="0dp" />
+
+        <View
+            android:id="@+id/sep"
+            android:layout_width="20dp"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/phoneBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/sep"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/inter_medium_500"
+            android:text="@string/phone"
+            android:textAllCaps="false"
+            android:textColor="#475766"
+            android:textSize="14sp"
+            app:cornerRadius="7dp" />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="22dp"
+        android:layout_marginTop="28dp"
+        android:background="#F5F5F5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/signUpMethod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="14dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/email"
+            android:textColor="#6F6E73" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/EmailPhone"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="14dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_field_bg"
+            android:fontFamily="@font/inter_regular_400"
+            android:hint="@string/email_example"
+            android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:paddingHorizontal="14dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hint_color"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/btndisabled_color"
+            android:fontFamily="@font/inter_semibold_600"
+            android:gravity="center"
+            android:text="@string/continue_text"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:cornerRadius="7dp"
+            android:id="@+id/btnCreateAccount"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/termsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="26dp"
+        android:gravity="center_horizontal"
+        android:text="@string/by_clicking_continue"
+        android:textColor="#5E6872"
+        android:autoLink="web"
+        android:textColorLink="@color/dark_blue"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="36dp"
+        android:layout_marginTop="17dp"
+        android:background="#DFDFE0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="86dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="@string/already_have_account"
+        android:textColor="#5E6872"
+        android:id="@+id/loginButtonView"
+        />
+
+
+</LinearLayout>
